@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokémon</title>
+	<meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CDN BOOTSTRAP-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Mis Estilos-->
+    <link rel="stylesheet" href="css/estilo.css"> 
+    
+    <!--CDN JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="js/javascript.js"></script>
+    
+    <!--No scalable-->
+    <meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;” />
+</head>
+    
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-dark bg-primary justify-content-between">
+            <a class="navbar-brand" href="#">Pokémon</a>
+            <div class="search-container">
+            <form>
+            <input type="text" placeholder="Buscar por nombre..." id="searchText" onkeyup="fnbuscar()" >               
+            </form>
+            </div>
+        </nav>
+	</header>
+    
+    <div class="imagen">        
+        <div class="contenedor">
+            <div class="dropdown">
+                <h2>Filtrar <i class="fa fa-filter" aria-hidden="true"></i></h2>
+                <ul class="filtro_padre dropdown-content">
+                    <li class="filtro filtro-activo" category="Todos">Todos</li>
+                    <li class="filtro" category="Grass,Poison">Grass + Poison</li>
+                    <li class="filtro" category="Poison">Poison</li>
+                    <li class="filtro" category="Fire">Fire</li>
+                    <li class="filtro" category="Fire,Flying">Fire + Flying</li>
+                    <li class="filtro" category="Normal,Flying">Normal + Flying</li>
+                    <li class="filtro" category="Bug,Flying">Bug + Flying</li>
+                    <li class="filtro" category="Water">Water</li>
+                    <li class="filtro" category="Water,Ice">Water + Ice</li>
+                    <li class="filtro" category="Water,Flying">Water + Flying</li>
+                    <li class="filtro" category="Water,Psychic">Water + Psychic</li>
+                    <li class="filtro" category="Bug">Bug</li>
+                    <li class="filtro" category="Normal">Normal</li>
+                    <li class="filtro" category="Electric">Electric</li>
+                    <li class="filtro" category="Ground">Ground</li>
+                    <li class="filtro" category="Fighting">Fighting</li>
+                    <li class="filtro" category="Water,Ice">Water + Ice</li>
+                    <li class="filtro" category="Ghost,Poison">Ghost + Poison</li>
+                    <li class="filtro" category="Rock,Water">Rock + Water</li>
+                    <li class="filtro" category="Rock,Ground">Rock + Ground</li>
+                </ul>
+            </div>
+            
+            <ul id="lista">
+                <!--AQUI ESTAN TODOS LOS POKEMON-->
+            </ul>
+        </div>
+    </div>
+    
+    <script src="js/script2.js"></script>
+</body>
+</html>
